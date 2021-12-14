@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ohmyfood - Outil de reservation de menus avec un choix de 4 restaurants.">
+  <title>Ohmyfood|Réservez le menu qui vous convient.</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;300;400;700&display=swap" rel="stylesheet"/> 
+</head>
+<body>
+
+<!--loader-->
+<div class="loader">
+  <span class="letter">o</span>
+  <span class="letter">h</span>
+  <span class="letter">m</span>
+  <span class="letter">y</span>
+  <span class="letter">f</span>
+  <span class="letter">o</span>
+  <span class="letter">o</span>
+  <span class="letter">d</span>
+</div>
+
+<!--spinner-->
+<div class="spinner">
+  <div class="spinner__border">
+ </div>
+</div>
+
+<!--Header-->  
+<header class="header">
+  <img src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood,le menu qui vous convient">
+</header> 
+
+<!--main--> 
+<main class="content">
+
+<!--search-->   
+  <div class="search__main">  
+    <div class="search__div">
+      <div class="search__iconMap">
+        <i class="fas fa-map-marker-alt fa-lg"></i>
+	    </div>
+	    <input type="text" id="txtSearch"  class="bdLightGrey" name="search" value="Paris, Belleville" > 
+	  </div>
+    <div class="search__container">
+      <h1>Reservez le menu qui<br>vous convient</h1>
+      <h2>Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.</h2>
+      <div class="button">
+        <button class="search__btn">Explorer nos restaurants</button>
+      </div>
+    </div>  
+  </div>
+
+  <section class="functioning__main">
+    <div class="functioning__div">
+    <div class="functioning__title"><h2>Fonctionnement</h2></div>
+      <div class="functioning__types">
+        <div class="functioning__type">	          
+          <p class="functioning__number">1</p>                
+          <div class="functioning__icon"><i class="fas fa-mobile-alt fa-3x grey"></i></div>
+          <p class="functioning__text">Choisissez un restaurant</p>        
+        </div>
+        <div class="functioning__type">	          
+          <p class="functioning__number">2</p>                
+          <div class="functioning__icon"><i class=" fas fa-list fa-2x grey"></i></div>
+          <p class="functioning__text">Composez votre menu</p>        
+        </div>
+        <div class="functioning__type">	          
+          <p class="functioning__number">3</p>                
+          <div class="functioning__icon"><i class="fas fa-store fa-2x grey"></i></div>
+          <p class="functioning__text">Degustez au restaurant</p>        
+        </div>   
+      </div>
+    </div>
+  </section>  
+
+<!--restaurants-->
+  <section id="restaurant__main">
+    <h2>Restaurants</h2>
+    <article id="restaurant__cardR1" class="restaurant__card">
+      <a href="MenuLaPaletteDuGout.html">
+        <div class="restaurant__imgContainer">
+          <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+          <div class="restaurant__new">Nouveau</div>
+	      </div>
+        <div class="restaurant__cardContent">
+          <h3>La palette du goût</h3>
+          <p>Ménilmontant</p>
+        </div>  
+        <div class="icon">
+          <svg class="heart-main" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+          <svg class="heart-background" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+        </div>               
+      </a>
+    </article>
+    <article id="restaurant__cardR2" class="restaurant__card">
+      <a href="MenuLaNoteEnchantee.html">
+        <div class="restaurant__imgContainer">
+          <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantéé">
+          <div class="restaurant__new">Nouveau</div>
+        </div>
+        <div class="restaurant__cardContent">
+          <h3>La note enchantée</h3>
+          <p>Charonne</p>
+        </div>
+        <div class="icon">
+          <svg class="heart-main" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+          <svg class="heart-background" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+        </div>            
+      </a>
+    </article>
+    <article id="restaurant__cardR3" class="restaurant__card">
+      <a href="MenuALaFrancaise.html">
+        <div class="restaurant__imgContainer">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la francaise">  
+        </div>
+        <div class="restaurant__cardContent">
+          <h3>A la francaise</h3>
+          <p>Cité Rouge</p>
+        </div>
+        <div class="icon">
+          <svg class="heart-main" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+          <svg class="heart-background" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+        </div>       
+      </a>
+    </article>
+    <article id="restaurant__cardR4" class="restaurant__card">
+      <a href="MenuLeDeliceDesSens.html">
+        <div class="restaurant__imgContainer">
+          <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+        </div>
+        <div class="restaurant__cardContent">
+          <h3>Le délice des sens</h3>
+          <p>Folie-Méricourt</p>
+        </div>
+        <div class="icon">
+          <svg class="heart-main" viewBox="0 0 512 512" width="80" >
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+          <svg class="heart-background" viewBox="0 0 512 512" width="80">
+            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+          </svg>
+        </div>             
+      </a>
+    </article> 
+  </section>      
+</main>
+  
+<!--footer-->
+<footer>  
+  <div class="wrapper">  
+    <h3>ohmyfood</h3>  
+    <ul>
+      <li>
+        <i class="fas fa-utensils"></i>
+        <a href="#">Proposez un restaurant</a>
+      </li>
+      <li>
+        <i class="fas fa-hands-helping"></i>
+        <a href="#">Devenir partenaire</a>
+      </li>
+      <li>
+        <a href="#">Mention Légales</a>
+      </li>
+	    <li>
+        <a href="mailto:contact@ohmyfood.com">Contact</a>
+      </li>
+    </ul>
+  </div>   
+</footer> 
+</body>
+</html>     
+

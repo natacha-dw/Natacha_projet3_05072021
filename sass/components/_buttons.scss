@@ -1,0 +1,123 @@
+/*heart*/
+
+
+
+:root {
+	--purple: #9356dc;
+	--pink: #ff79da;
+	--black: black;
+	--colorGradient:linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+      }
+      
+.icon {
+	fill: transparent;
+	stroke: var(--black);
+	stroke-width: 20px;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	margin: -33px 20px;
+	margin-top: 0px;
+      
+	svg {
+	overflow: visible;
+	width: 23px;
+	}
+      
+	path {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 1550;
+	transform-origin: center;
+	}
+      
+	.heart-background {
+	position: absolute;
+	left: 0;
+	right: 20px;
+	z-index: -1;
+	stroke: none;    
+	}
+      
+	.heart-main:hover path {
+	animation: stroke-animation 1s ease-in-out forwards;
+	}
+      
+	.heart-main:hover ~ .heart-background path {
+	animation: fade-animation 1s ease-in-out forwards;
+	  
+	}
+}
+      
+      @keyframes stroke-animation {
+      
+	80% {
+	    fill: var(--pink );    
+		}
+       
+	100% {    
+	    fill: var(--purple);
+		}
+    }
+
+
+	/*menu gradient button*/	  
+ 	.menu{
+		&__container-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+      }
+      
+		&__button {
+	opacity: 1;
+	background: linear-gradient(180deg, $secondry-color 0%,$primary-color 100%);
+	color: white;
+	padding: 0 20px;
+	border-radius: 200px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	padding: 16px 47px;
+	margin: 50px 0;
+	font-size: 14px;
+      }
+      
+    	&__button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	transition: 0.3s;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+      }	  
+
+	}	
+	
+	/*search gradient button*/
+
+	.search{
+		&__btn {
+			display: flex !important;
+			border-radius: 200px;
+			background: linear-gradient(180deg, $secondry-color 0%, $primary-color 100%);
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+			text-decoration: none;
+			font-size: 16px;
+			padding: 0 20px;
+			margin: 12px 50px 30px 12px;
+			height: 50px;
+			color: white;
+			font-weight: bold;
+			margin: auto;
+			align-items: center;
+			justify-content: center;
+			border: 0 !important;
+			width: 217px;
+			}
+		&__btn:hover{
+			opacity: 0.8;
+			cursor: pointer;
+			transition: 0.3s;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+		}	
+	}
+
+	

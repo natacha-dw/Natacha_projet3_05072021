@@ -1,0 +1,50 @@
+/*header home*/
+.header{
+	position: relative;
+  	@include flexbox;
+	border-bottom: black;
+	box-shadow: 0 4px 14px -3px darkgray;
+	height: 62px;
+	width: 100%;
+	background: white;
+	
+	img{
+		width: 160px;	
+    padding-top: 12px;
+	}
+}	
+
+/*header menu*/
+
+.header {
+  
+	.header__arrow-return {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 35px;
+	top: 40%;
+	font-size: 20px;
+	}
+
+	.header__arrow-return a {
+	color: #000;
+	}
+
+
+	.header__logo {
+	font-family: "Shrikhand", cursive;
+	margin: 0;
+	}
+
+
+	.header .header__logo a {
+	color: #000;
+	}
+	
+}
+
+ 
+
+
+
